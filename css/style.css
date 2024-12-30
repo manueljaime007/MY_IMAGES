@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'font';
+    src: url(../assets/fonts/premier-league-11.ttf);
+}
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'font';
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: #f4f4f4 no-repeat;
+    height: 100dvh;
+    background-size: cover;
+}
+
+header{
+    background-color: #1f1f1f;
+    border: 3px solid #f06e04;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+header .logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+.logo span{
+    color: #f06e04;
+}
+
+
+header .navbar ul{
+    display: flex;
+    gap: 1rem;
+}
+.navbar ul li a{
+    display: block;
+    color: white;
+    padding: .8rem 1rem ;
+    border-radius: .5rem;
+    transition: background-color.3s ease;
+    border: 2px solid;
+}
+ul li a:hover{
+    background-color: #f06e04;
+    color: #1f1f1f;
+    border-color: #f06e04;
+}
+main{
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+section.banner{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.banner h2{
+    color: #1f1f1f;
+    font-size: 2rem;
+}
+.banner p{
+    color: #1f1f1f;
+    font-size: 1.2rem;
+}
+.banner a{
+    color: #1f1f1f;
+    background-color: #f06e04;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius:.5rem;
+    text-decoration: none;
+    transition: background-color.3s ease;
+    width: 200px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.images__section{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.images__section .subtitle{
+    color: #1f1f1f;
+    font-size: 2rem;
+    text-align: center;
+}
+.images__section #image__container{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.images__section #image__container figure img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid #f06e04;
+    border-radius: .5rem;
+}
+
+footer{
+    padding: 2rem 10rem;
+    background: #1f1f1f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 3px solid #f06e04;
+}
+
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+}
+
+div .social-media-links ul {
+    display: flex;
+    gap: 1rem;
+}
+
+div .social-media-links ul li a{
+    color: white;
+    text-decoration: none;
+    transition: color .3s ease;
+    font-size: 1.3rem;
+    margin: 0 .3rem;
+    &:hover{
+        background-color: transparent;
+    }
+}
+footer p{
+    text-align: center;
+}
+
+footer p a{
+    color: #f06e04;
+}
